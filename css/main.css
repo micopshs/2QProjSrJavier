@@ -1,0 +1,70 @@
+/******************************************************************************
+ * Common Selectors
+******************************************************************************/
+
+nav li {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.footer {
+  margin-bottom: 0px;
+}
+
+#notes {
+  font-style: italic;
+}
+
+/******************************************************************************
+ * Selectors for index.html only
+******************************************************************************/
+
+#home {
+  background-attachment: fixed;
+  background-image: url("../images/airplane-evacuation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+#introduction {
+  background-color: #222;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+#introduction h2 {
+  font-weight: bold;
+}
+
+#introduction p {
+  font-size: 1.2em;
+  font-style: italic;
+  margin: 40px auto;
+}
+
+#introduction a {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#introduction a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#home .footer {
+  margin-top: 58px;
+}
+
+#bg-img-source {
+  font-size: 10px !important;
+  font-style: normal !important;
+  margin: 20px auto !important;
+  text-align: left;
+}
+
+#bg-img-source a {
+  font-size: 10px;
+}
