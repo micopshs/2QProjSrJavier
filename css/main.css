@@ -7,7 +7,12 @@ nav li {
   font-weight: bold;
 }
 
-.footer {
+#nav-title {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+#footer {
   margin-bottom: 0px;
 }
 
@@ -54,7 +59,7 @@ nav li {
   text-decoration: underline;
 }
 
-#home .footer {
+#home #footer {
   margin-top: 58px;
 }
 
@@ -67,4 +72,18 @@ nav li {
 
 #bg-img-source a {
   font-size: 10px;
+}
+
+/******************************************************************************
+ * Selectors for context.html only
+******************************************************************************/
+
+#context #footer {
+  margin-top: 40px;
+}
+
+#context .section-img-container img {
+  border: 2px solid black;
+  display: block;
+  margin: 0px auto;
 }
