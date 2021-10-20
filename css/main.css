@@ -8,10 +8,15 @@ nav li {
 }
 
 #footer {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
-#notes {
+#footer a {
+  margin: 10px auto;
+}
+
+#notes p {
+  margin: 10px auto;
   font-style: italic;
 }
 
@@ -55,7 +60,7 @@ nav li {
 }
 
 #home #footer {
-  margin-top: 58px;
+  margin-top: 20px;
 }
 
 #bg-img-source {
@@ -81,4 +86,8 @@ nav li {
   border: 2px solid black;
   display: block;
   margin: 0px auto;
+}
+
+#context .section-content {
+  text-align: justify;
 }
