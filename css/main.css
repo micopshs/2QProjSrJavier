@@ -7,11 +7,6 @@ nav li {
   font-weight: bold;
 }
 
-#nav-title {
-  font-size: 1.17em;
-  font-weight: bold;
-}
-
 #footer {
   margin-bottom: 0px;
 }
@@ -33,7 +28,7 @@ nav li {
 }
 
 #introduction {
-  background-color: #222;
+  background-color: rgba(34, 34, 34, 0.9);
   border-radius: 25px;
   color: #fff;
   text-align: center;
