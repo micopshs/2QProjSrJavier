@@ -96,6 +96,10 @@ nav li {
   margin: 0px auto;
 }
 
+#context .section-content h2 {
+  text-align: center;
+}
+
 #context .section-content p {
   text-align: justify;
 }
