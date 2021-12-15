@@ -1,2 +1,2 @@
-# SrJavier1stQtrProject
-A CompSci project
+# SrJavier2ndQtrProject
+Computer Science 3 project
