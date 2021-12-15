@@ -6,16 +6,16 @@ img {
   overflow: auto;
 }
 
-nav li {
+nav li, footer li {
   font-size: 1.17em;
   font-weight: bold;
 }
 
-#footer {
-  margin-bottom: 0;
+footer {
+  margin-bottom: 0 !important;
 }
 
-#footer a {
+footer a {
   margin: 10px auto;
 }
 
@@ -40,66 +40,89 @@ nav li {
   filter: grayscale(100%);
 }
 
-#introduction {
+#home main {
   background-color: rgba(34, 34, 34, 0.9);
   border-radius: 25px;
   color: #fff;
+  margin-bottom: -18px;
   text-align: center;
 }
 
-#introduction h2 {
+#home main h2 {
   font-weight: bold;
 }
 
-#introduction p {
+#home main p {
   font-size: 1.2em;
   font-style: italic;
   margin: 40px auto;
 }
 
-#introduction a {
+#home main a {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
 
-#introduction a:hover {
+#home main a:hover {
   font-weight: bold;
   text-decoration: underline;
 }
 
-#home #footer {
-  margin-top: 20px;
-}
-
-#bg-img-source {
-  font-size: 10px !important;
-  font-style: normal !important;
-  margin: 20px auto !important;
-  text-align: left;
-}
-
-#bg-img-source a {
-  font-size: 10px;
+#home footer {
+  margin-top: 60px;
 }
 
 /******************************************************************************
  * Selectors for context.html only
 ******************************************************************************/
 
-#context #footer {
-  margin-top: 40px;
+#context footer {
+  margin-top: 20px;
 }
 
-#context .section-img-container img {
+#context figure img {
   border: 2px solid black;
   display: block;
   margin: 0px auto;
 }
 
-#context .section-content h2 {
+#context figcaption {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#context section h2 {
   text-align: center;
 }
 
-#context .section-content p {
+#context section p {
   text-align: justify;
+}
+
+#context .vidcaption {
+  font-style: italic;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/******************************************************************************
+ * Selectors for references.html only
+******************************************************************************/
+
+#references h3 {
+  text-align: center;
+}
+
+#references footer {
+  margin-top: 125px;
+}
+
+#references p[id] {
+  /* Hanging Indent */
+  padding-left: 30px;
+  text-indent: -30px;
+}
+
+#references p[id]:target {
+  background-color: lightskyblue;
 }
