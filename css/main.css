@@ -28,6 +28,13 @@ footer a {
   color: #fff !important;
 }
 
+@media screen and (max-width: 767px) {
+  /* formatting for "next>>" anchor under small devices */
+  footer li:nth-child(2) a::before {
+    content: "\00a0\00a0\00a0\00a0\00a0";
+  }
+}
+
 /******************************************************************************
  * Selectors for index.html only
 ******************************************************************************/
