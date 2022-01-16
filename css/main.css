@@ -192,10 +192,12 @@ a:hover #github {
 }
 
 @media screen and (max-width: 767px) {
+  /* formatting for pie chart in statistics.html for small devices */
   #content #pie-chart {
-    width: 380px;
+    width: 360px;
     height: 270px;
   }
+  /* formatting for infographics in statistics.html for small devices */
   #content #infographics figure img {
     width: 80%;
     height: 80%;
