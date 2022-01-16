@@ -36,6 +36,60 @@ footer a {
 }
 
 /******************************************************************************
+ * Animations
+******************************************************************************/
+
+@keyframes float-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0px);  }
+}
+
+@keyframes float-side {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0px);   }
+}
+
+/******************************************************************************
+ * Selectors for sprites
+******************************************************************************/
+
+#contact p {
+  font-style: italic;
+}
+
+.sprite {
+  border-radius: 50%;
+  display: inline-block;
+	height: 32px;
+  width: 33px;
+  margin-bottom: 10px;
+}
+
+a #facebook {
+  background: url('../images/social-media.png') no-repeat -182px -91px;
+}
+
+a:hover #facebook {
+  background: url('../images/social-media.png') no-repeat -182px -16px;
+}
+
+a #twitter {
+  background: url('../images/social-media.png') no-repeat -296px -91px;
+}
+
+a:hover #twitter {
+  background: url('../images/social-media.png') no-repeat -296px -16px;
+}
+
+a #github {
+  background: url('../images/social-media.png') no-repeat -411.5px -91.5px;
+}
+
+a:hover #github {
+  background: url('../images/social-media.png') no-repeat -411.5px -16.5px;
+}
+
+/******************************************************************************
  * Selectors for index.html only
 ******************************************************************************/
 
@@ -44,7 +98,6 @@ footer a {
   background-image: url("../images/airplane-evacuation.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(100%);
 }
 
 #home main {
@@ -53,6 +106,8 @@ footer a {
   color: #fff;
   margin-bottom: -18px;
   text-align: center;
+  animation-name: float-up;
+  animation-duration: 2s;
 }
 
 #home main h2 {
@@ -67,7 +122,7 @@ footer a {
 
 #home main a {
   font-size: 1.2em;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 #home main a:hover {
@@ -89,36 +144,50 @@ footer a {
   margin-top: 43px;
 }
 
+#home #contact p {
+  margin: 10px auto !important;
+}
+
 /******************************************************************************
- * Selectors for context.html only
+ * Selectors for content.html only
 ******************************************************************************/
 
-#context footer {
+#content main {
+  animation-name: float-side;
+  animation-duration: 2s;
+}
+
+#content footer {
   margin-top: 20px;
 }
 
-#context figure img {
+#content figure img {
   border: 2px solid black;
   display: block;
   margin: 0px auto;
 }
 
-#context figcaption {
+#content figcaption {
   font-style: italic;
   margin-top: 10px;
 }
 
-#context section h2 {
+#content section h2 {
   text-align: center;
 }
 
-#context section p {
+#content section p {
   text-align: justify;
 }
 
-#context .vidcaption {
+#content .vidcaption {
   font-style: italic;
   margin-top: 10px;
+  text-align: center;
+}
+
+#content .pcaption {
+  font-style: italic;
   text-align: center;
 }
 
@@ -126,12 +195,17 @@ footer a {
  * Selectors for references.html only
 ******************************************************************************/
 
+#references main {
+  animation-name: float-side;
+  animation-duration: 2s;
+}
+
 #references h3 {
   text-align: center;
 }
 
 #references footer {
-  margin-top: 75px;
+  margin-top: 20px;
 }
 
 #references p[id] {
