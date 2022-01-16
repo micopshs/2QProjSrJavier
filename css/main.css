@@ -206,6 +206,7 @@ a:hover #github {
 #references main {
   animation-name: float-side;
   animation-duration: 2s;
+  overflow: hidden;
 }
 
 #references h3 {
